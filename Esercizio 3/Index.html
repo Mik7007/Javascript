@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "./File.js"></script>
+        <h1>Esercizo numero 3</h1>
+        <script>
+            "use strict"
+
+            let a = +prompt("Inserire il valore A")
+            let b = +prompt("Inserire il valore B")
+            let k = +prompt("Inserire il valore K")
+            let max = maggiore(a,maggiore(b,k))
+            let min =  minore(a,minore(b,k))
+            
+            alert("Il valore maggiore e' " + max)
+            alert("Il valore minore e' " + min)
+            alert("La somma dei valori da A a B e' " + somma(min,max))
+            alert("Il prodotto dei valori da A a B pari e' " + prodotto(min,max))
+            alert("I multipli di K compresi tra A e B sono questi")
+            multiplo(min,max,k)
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "./Text.js"></script>
+        <h1>Esercizo numero 4</h1>
+        <script>
+            "use strict"
+
+            let min = +prompt("Inserire il valore minimo")
+            let max
+            let n
+            do {
+                max = +prompt("Inserire il valore massimo maggiore del minore")
+            } while (min>=max)
+
+            n = inseriscintero(min,max)
+            conta_somma_valori(n,min,max)
+            
+        </script>
+    </body>
+</html>
