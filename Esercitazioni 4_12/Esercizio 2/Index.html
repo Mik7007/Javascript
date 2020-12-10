@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script src = "./Main.js"></script>
+        <script>
+            "use strict"
+            let cond = false
+            let result
+            let k
+            do {
+                k = +prompt("Inserire un valore compreso tra 0 e 1000")
+                cond = Inseriscitraestremi(k)
+            } while (cond === false)
+            result = divisori(k)
+            alert(`Il numero ha ${result} divisori`)
+        </script>
+    </body>
+</html>
